@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durgesh | Developer Portfolio</title>
+
+    <meta name="description" content="Portfolio of Durgesh, Computer Engineering student skilled in full-stack development and problem solving.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        nav {
+            background: #020617;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #cbd5f5;
+        }
+
+        .resume-btn {
+            padding: 8px 15px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero-btns {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: black;
+        }
+
+        .btn-outline {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .bg-alt {
+            background: #020617;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .project-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .tech-stack {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .skills-flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill-tags span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="container nav-container">
+        <div class="logo">DURGESH<span>.Chaudhari
+        </span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+        <a href="resume.pdf" class="resume-btn" download>Resume</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="hero">
+    <div class="container">
+        <h1>Hi, I'm <span>Durgesh</span></h1>
+        <h2>Full Stack Developer | Problem Solver</h2>
+        <p>
+            I build scalable applications and efficient systems with a focus on performance and real-world problem solving.
+        </p>
+
+        <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact</a>
+        </div>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align:center;">
+            I am a Computer Engineering student with a strong interest in full-stack development, system design, and problem solving.
+            I enjoy building scalable applications and working on real-world projects.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section bg-alt">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Secure Voting System</h3>
+                <p>
+                    Developed a secure system with authentication and database constraints to ensure data integrity.
+                </p>
+                <div class="tech-stack">Java • SQL</div>
+            </div>
+
+            <div class="project-card">
+                <h3>2D Survival Game</h3>
+                <p>
+                    Built a Unity-based game with dynamic difficulty and optimized performance.
+                </p>
+                <div class="tech-stack">C# • Unity</div>
+            </div>
+
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                    Created a web-based inventory system with product and order management.
+                </p>
+                <div class="tech-stack">Python • SQL</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-flex">
+
+            <div>
+                <h4>Languages</h4>
+                <div class="skill-tags">
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>C++</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Tools</h4>
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>Unity</span>
+                    <span>AutoCAD</span>
+                    <span>SketchUp</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-alt">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p style="text-align:center;">
+            Add your GitHub and LinkedIn here
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Durgesh</p>
+</footer>
+
+</body>
+</html>
